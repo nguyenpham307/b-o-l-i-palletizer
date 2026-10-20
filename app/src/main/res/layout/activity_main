@@ -1,0 +1,21 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="16dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="PALLETIZER ALARM" android:textSize="24sp" android:textStyle="bold"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:paddingTop="8dp" android:text="Camera OCR → Telegram. Giữ điện thoại hướng vào màn hình HMI."/>
+        <EditText android:id="@+id/token" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Telegram Bot Token" android:inputType="textPassword" android:singleLine="true"/>
+        <EditText android:id="@+id/chatId" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Telegram Chat ID" android:inputType="text" android:singleLine="true"/>
+        <Button android:id="@+id/save" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Lưu cấu hình"/>
+        <Button android:id="@+id/start" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="BẮT ĐẦU GIÁM SÁT"/>
+        <Button android:id="@+id/stop" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DỪNG GIÁM SÁT"/>
+        <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:paddingTop="12dp" android:text="Trạng thái: chưa giám sát" android:textSize="16sp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:paddingTop="16dp" android:text="Lưu ý: Android có thể giới hạn camera khi chạy nền. Hãy khởi động giám sát khi ứng dụng đang mở và không buộc dừng ứng dụng."/>
+    </LinearLayout>
+</ScrollView>
